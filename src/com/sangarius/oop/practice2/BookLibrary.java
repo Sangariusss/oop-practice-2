@@ -17,14 +17,4 @@ public class BookLibrary {
         books.add(new Book("Author3", "Book4", "Publisher3", 2019, 280));
         return books;
     }
-
-    public static void printBooks(List<Book> books) {
-        if (books.isEmpty()) {
-            System.out.println("The books were not found.");
-        } else {
-            for (Book book : books) {
-                System.out.println(book.getTitle() + " (" + book.getYear() + ")");
-            }
-        }
-    }
 }
